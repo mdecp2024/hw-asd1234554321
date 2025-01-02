@@ -63,6 +63,9 @@
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/G6rt59YDzyk" width="560"></iframe></p>
 <p><a href="https://gist.github.com/asd1234554321/8bee072512f4a59a1972302f31af4327">程式碼</a></p>
 <h2>w13_hw</h2>
+<p>影片</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/JTG7q7D9izk" width="560"></iframe></p>
+<p>程<a href="https://mdecp2024.github.io/hw-asd1234554321/content/Brython.html?src=https://gist.githubusercontent.com/asd1234554321/d3231ca7b246e5e08fd2e3e134d8b3b1/raw/ae140445eac1a58b8d7714f0bad4cfdbd34fdc13/w13_hw">式碼</a></p>
 <p></p>
 <h2>w14_hw</h2>
 <p>影片</p>
@@ -90,7 +93,23 @@
 <p><strong><span>程式:</span></strong></p>
 <p><strong># 初始化變數</strong><br/><strong>total = 0</strong></p>
 <p><strong>print("累加過程（排除數字和累加結果中包含數字 8 的情況）：")</strong></p>
-<p><strong># 累加過程，排除數字和累加結果中包含數字 8 的數字</strong><br/><strong>for i in range(1, 101):</strong><br/><strong> # 如果數字中有 8 或累加結果中有 8，則跳過該數字</strong><br/><strong> if '8' in str(i) or '8' in str(total + i):</strong><br/><strong> print(f"數字 {i} 或累加結果中有 8，跳過！")</strong><br/><strong> continue</strong><br/><strong> total += i</strong><br/><strong> print(f"加 {i} 後的結果是：{total}")</strong><strong># 最終結果</strong><br/><strong>print(f"\n排除數字和累加結果中包含數字 8 的情況後，1 到 100 的累加結果是：{total}")                        </strong>心得:從今天的程式教學中我除了可以學習到for迴圈的程式應用之外，今天的作業甚至還使用到了w11的作業寫法，讓我可以重新再複習一次我已經有點忘掉的部分，再看了chatgpt以及問了它程式碼的意思之後我也越來越清除這一些程式碼是甚麼意思，怎麼打程式碼才能達到它想要的目標</p>
+<p><strong># 累加過程，排除數字和累加結果中包含數字 8 的數字</strong><br/><strong>for i in range(1, 101):</strong><br/><strong> # 如果數字中有 8 或累加結果中有 8，則跳過該數字</strong><br/><strong> if '8' in str(i) or '8' in str(total + i):</strong><br/><strong> print(f"數字 {i} 或累加結果中有 8，跳過！")</strong><br/><strong> continue</strong><br/><strong> total += i</strong><br/><strong> print(f"加 {i} 後的結果是：{total}")</strong><strong># 最終結果</strong><br/><strong>print(f"\n排除數字和累加結果中包含數字 8 的情況後，1 到 100 的累加結果是：{total}")                        </strong>心得:從今天的程式教學中我除了可以學習到for迴圈的程式應用之外，今天的作業甚至還使用到了w11的作業寫法，讓我可以重新再複習一次我已經有點忘掉的部分，再看了chatgpt以及問了它程式碼的意思之後我也越來越清除這一些程式碼是甚麼意思，怎麼打程式碼才能達到它想要的目標                                                                                                                                                                                                                          <a href="https://mdecp2024.github.io/hw-asd1234554321/content/Brython.html?src=https://gist.githubusercontent.com/asd1234554321/8fdfc247ca3de29d0d20681d09536b22/raw/b68034174a10404c73aeeedc9eb90a6af2e2fedd/w15_%25E6%25B8%25AC%25E9%25A9%2597.py">w15_測驗:</a>程式:</p>
+<pre># 初始化變數
+total = 0
+
+print("累加過程（排除數字和累加結果中包含數字 8 或 3 的情況）：")
+
+# 累加過程，排除數字和累加結果中包含數字 8 或 3 的數字
+for i in range(1, 101):
+    # 如果數字中有 8 或 3，或累加結果中有 8 或 3，則跳過該數字
+    if '8' in str(i) or '3' in str(i) or '8' in str(total + i) or '3' in str(total + i):
+        print(f"數字 {i} 或累加結果中有 8 或 3，跳過！")
+        continue
+    total += i
+    print(f"加 {i} 後的結果是：{total}")
+
+# 最終結果
+print(f"\n排除數字和累加結果中包含數字 8 或 3 的情況後，1 到 100 的累加結果是：{total}")</pre>
 <h2>HW 3 Exam</h2>
 <p>每六人為一組進行協同程式練習</p>
 <p>透過 Jupyterlab 協同網頁, 輪流指定各組編寫 HW 3 相關的程式練習, 以及網頁內容 (localhost 與 Codespaces 環境)編輯.</p>
